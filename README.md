@@ -14,6 +14,7 @@ Project loosely follows Observer Pattern in a way that objects communicate via A
 
 ## Note
 Open <b>Demo</b> scene playtest the project.
+
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/26239787/162052432-7c839c7b-f5b1-41ca-bd9d-375f48e38d2f.png">
 
 
