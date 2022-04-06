@@ -12,6 +12,11 @@ Project loosely follows Observer Pattern in a way that objects communicate via A
 - EnemyHandler.cs then iterates over this collection of POIs and start placing enemies on given coordinates (some are placed over the buildings using Building-API and some are placed on the Road using Transport-API)
 - Finally, after EnemyHandler.cs done placing enemies, an event is triggered for AutoTargetHandler.cs to cache this List of enemy objects and iterate over them as/when needed.
 
+## Note
+Open <b>Demo</b> scene playtest the project.
+<img width="663" alt="image" src="https://user-images.githubusercontent.com/26239787/162052432-7c839c7b-f5b1-41ca-bd9d-375f48e38d2f.png">
+
+
 <b>Points Of Interest Placement</b>
 
 https://user-images.githubusercontent.com/26239787/162039962-9108437f-9717-484b-a5aa-ac6381f856d0.mov
