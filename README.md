@@ -13,7 +13,7 @@ Project loosely follows Observer Pattern in a way that objects communicate via A
 - Finally, after EnemyHandler.cs done placing enemies, an event is triggered for AutoTargetHandler.cs to cache this List of enemy objects and iterate over them as/when needed.
 
 ## Note
-Open <b>Demo</b> scene playtest the project.
+Open <b>Demo</b> scene to playtest the project.
 
 <img width="663" alt="image" src="https://user-images.githubusercontent.com/26239787/162052432-7c839c7b-f5b1-41ca-bd9d-375f48e38d2f.png">
 
