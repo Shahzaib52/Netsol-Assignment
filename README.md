@@ -1,6 +1,18 @@
 # Netsol-Assignment
 
-<b>Points Of Interest Placecment</b>
+## Overview
+
+Project loosely follows Observer Pattern in a way that objects communicate via Actions and Funcs, focus mainly remained on data-driven approach and modularity with extensive use of interfaces, abstraction and inheritance.
+
+## Flow
+
+- WrldApiRequestHandler.cs communicates with WRLD restful APIs to fetch POI-Sets and POIs (I was unable to find out of the box functionality to get POIs through Unity SDK so I made my own)
+- EnemyHandler.cs calls WrldApiRequestHandler.RequestPOIs(callback) method and pass a callback as a parameter for a function to invoke as/when UnityWebRequest completes. 
+- callback returns with a List of all the POIs placed via Map/Place Designer
+- EnemyHandler.cs then iterates over this collection of POIs and start placing enemies on given coordinates (some are placed over the buildings using Building-API and some are placed on the Road using Transport-API)
+- Finally, after EnemyHandler.cs done placing enemies, an event is triggered for AutoTargetHandler.cs to cache this List of enemy objects and iterate over them as/when needed.
+
+<b>Points Of Interest Placement</b>
 
 https://user-images.githubusercontent.com/26239787/162039962-9108437f-9717-484b-a5aa-ac6381f856d0.mov
 
